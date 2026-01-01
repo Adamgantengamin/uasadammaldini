@@ -1,0 +1,200 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #85edf7;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #65eaf6;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #bdf4f3, #83fbe9);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
+/* Informasi */
+.Informasi {
+    background: linear-gradient(to right, #bdf4f3, #83fbe9);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* PROFILE */
+.Profile {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(182, 249, 248);
+}
+
+.Profile img {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.profile-text h2 {
+    margin-bottom: 10px;
+}
+
+/* INFORMASI */
+.informasi {
+    padding: 60px 10%;
+}
+
+.informasi h2 {
+    margin-bottom: 15px;
+}
+
+/* MEDIA */
+/* MEDIA */
+.Media {
+    padding: 50px;
+    background-color: rgb(177, 250, 248);
+    text-align: center;
+}
+
+.media-foto img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.media-video video {
+    width: 300px;
+    margin: 10px;
+}
+
+.media-audio {
+    margin-top: 20px;
+}
+
+/* PROJECT */
+.project {
+    padding: 60px 10%;
+}
+
+.project h2 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #aff1fc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* KONTAK */
+.kontak {
+    padding: 60px 10%;
+    background: #88dce9;
+}
+
+.kontak-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.kontak-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.kontak-form button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #1e293b;
+    color: #b5fefe;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kontak-form button:hover {
+    background: #38bdf8;
+    color: #000;
+}
+
+/* FOOTER */
+.footer {
+    background: #1e293b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .media-video {
+        flex-direction: column;
+    }
+}
